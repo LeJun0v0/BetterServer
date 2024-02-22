@@ -1,0 +1,31 @@
+name: BetterServer
+version: '${project.version}'
+main: io.github.lejun0v0.betterserver.BetterServer
+api-version: '1.20'
+load: STARTUP
+authors: [ LeJun0v0 ]
+description: A self-use plugin
+website: lejun0v0.github.io
+
+commands:
+  suicide:
+    description: "一条用于自杀的指令，可想清楚了嗷~"
+    aliases:
+      - self-kill
+  whereis:
+    description: "查询玩家位置"
+    permission: betterserver.command.whereis
+    permission-message: "§c你没权限哦~"
+  get:
+    description: "指令仍在测试阶段"
+    permission: betterserver.command.get
+    permission-message: "§c你没权限哦~"
+
+
+permissions:
+  betterserver.command.whereis:
+    description: "Permission Node"
+    default: op
+  betterserver.command.get:
+    description: "Permission Node"
+    default: op
