@@ -9,7 +9,7 @@ website: lejun0v0.github.io
 
 commands:
   suicide:
-    description: "一条用于自杀的指令，可想清楚了嗷~"
+    description: "自杀，可想清楚了嗷~"
     aliases:
       - self-kill
   whereis:
@@ -20,12 +20,23 @@ commands:
     description: "指令仍在测试阶段"
     permission: betterserver.command.get
     permission-message: "§c你没权限哦~"
-
-
+  betterserver:
+    description: "和本插件有关的指令"
+    permission: betterserver.command.betterserver
+    permission-message: "§c你没权限哦~"
+  home:
+    description: "回家"
+    permission-message: "§c你没权限哦~"
+  sethome:
+    description: "设置家"
+    permission-message: "§c你没权限哦~"
 permissions:
   betterserver.command.whereis:
     description: "Permission Node"
     default: op
   betterserver.command.get:
+    description: "Permission Node"
+    default: op
+  betterserver.command.betterserver:
     description: "Permission Node"
     default: op

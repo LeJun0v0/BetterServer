@@ -26,7 +26,7 @@ public class GetCommand implements CommandExecutor, TabExecutor {
             return true;
         }
 
-        Player player = (Player) commandSender;
+        final Player player = (Player) commandSender;
         //get block at x y z
         if (strings.length != 5 || !strings[0].equals("block") || !strings[1].equals("at") || !areDecimal(strings[2], strings[3], strings[4])) {
             player.sendMessage(ChatColor.RED + "参数错误！");

@@ -12,7 +12,7 @@ public class WhereisCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
         if (strings.length != 1) {
-            commandSender.sendMessage(ChatColor.RED + "该指令只能有一个参数！");
+            commandSender.sendMessage(ChatColor.RED + "该命令只能有一个参数！");
             return true;
         }
         BetterServer betterServer = BetterServer.getInstance();

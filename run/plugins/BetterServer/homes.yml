@@ -1,0 +1,36 @@
+home1:
+  world: world
+  owner: Cai2er
+  x: 10
+  y: 80
+  z: 10
+home2:
+  world: world_the_end
+  owner: Cai2er
+  x: 2
+  y: 100
+  z: 2
+'1':
+  owner: Cai2er
+  world: world
+  x: 146.20618792676018
+  y: 63.0
+  z: 21.349961146917867
+'2':
+  owner: Cai2er
+  world: world
+  x: 113.3499337570528
+  y: 77.74354186608872
+  z: -31.75135298450466
+home4:
+  owner: Cai2er
+  world: world
+  x: 10.0
+  y: 53.0
+  z: 10.0
+water:
+  owner: Cai2er
+  world: world
+  x: -32.58560493721194
+  y: 63.0
+  z: 81.4697595737246

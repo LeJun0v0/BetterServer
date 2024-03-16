@@ -1,54 +1,75 @@
-[19:37:11] [ServerMain/WARN]: [oshi.driver.windows.perfmon.PerfmonDisabled] Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
-[19:37:17] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[19:37:17] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
-[19:37:19] [ServerMain/INFO]: Loaded 7 recipes
-[19:37:20] [Server thread/INFO]: Starting minecraft server version 1.20.1
-[19:37:20] [Server thread/INFO]: Loading properties
-[19:37:20] [Server thread/INFO]: This server is running Leaves version git-Leaves-"847357b" (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 847357b)
-[19:37:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[19:37:21] [Server thread/INFO]: Using 4 threads for Netty based IO
-[19:37:21] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
-[19:37:21] [Server thread/INFO]: Default game type: SURVIVAL
-[19:37:21] [Server thread/INFO]: Generating keypair
-[19:37:21] [Server thread/INFO]: Starting Minecraft server on *:25565
-[19:37:22] [Server thread/INFO]: Using default channel type
-[19:37:22] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[19:37:22] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[19:37:22] [Server thread/INFO]: [BetterServer] Loading server plugin BetterServer v1.0
-[19:37:22] [Server thread/INFO]: [BetterServer] Enabling BetterServer v1.0
-[19:37:22] [Server thread/INFO]: [BetterServer] Just for testing.
-[19:37:22] [Server thread/INFO]: Preparing level "world"
-[19:37:27] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[19:37:28] [Server thread/INFO]: Time elapsed: 123 ms
-[19:37:28] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[19:37:28] [Server thread/INFO]: Time elapsed: 81 ms
-[19:37:28] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[19:37:28] [Server thread/INFO]: Time elapsed: 70 ms
-[19:37:28] [Server thread/INFO]: Running delayed init tasks
-[19:37:28] [Server thread/INFO]: Done (7.865s)! For help, type "help"
-[19:40:22] [Server thread/INFO]: Stopping server
-[19:40:22] [Server thread/INFO]: [BetterServer] Disabling BetterServer v1.0
-[19:40:22] [Server thread/INFO]: Saving players
-[19:40:22] [Server thread/INFO]: Saving worlds
-[19:40:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[19:40:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[19:40:22] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[19:40:22] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[19:40:24] [Server thread/INFO]: [ChunkHolderManager] Saved 2025 block chunks, 529 entity chunks, 0 poi chunks in world 'world' in 1.81s
-[19:40:24] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[19:40:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[19:40:24] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[19:40:24] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[19:40:24] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[19:40:25] [Server thread/INFO]: [ChunkHolderManager] Saved 2025 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0.89s
-[19:40:25] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[19:40:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[19:40:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[19:40:25] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[19:40:25] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[19:40:25] [Server thread/INFO]: [ChunkHolderManager] Saved 2025 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.35s
-[19:40:25] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[19:40:25] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[19:40:25] [Server thread/INFO]: Flushing Chunk IO
-[19:40:25] [Server thread/INFO]: Closing Thread Pool
-[19:40:25] [Server thread/INFO]: Closing Server
+[15:48:53] [ServerMain/WARN]: [oshi.driver.windows.perfmon.PerfmonDisabled] Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[15:49:00] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:49:03] [ServerMain/INFO]: Loaded 7 recipes
+[15:49:03] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[15:49:03] [Server thread/INFO]: Loading properties
+[15:49:03] [Server thread/INFO]: This server is running Leaves version git-Leaves-"847357b" (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 847357b)
+[15:49:04] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:49:04] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:49:04] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[15:49:05] [Server thread/INFO]: Default game type: SURVIVAL
+[15:49:05] [Server thread/INFO]: Generating keypair
+[15:49:05] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:49:05] [Server thread/INFO]: Using default channel type
+[15:49:05] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[15:49:05] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[15:49:05] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
+[15:49:06] [Server thread/INFO]: [BetterServer] Loading server plugin BetterServer v1.0
+[15:49:06] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:49:06] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
+[15:49:06] [Server thread/INFO]:         __    
+[15:49:06] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
+[15:49:06] [Server thread/INFO]:   |___ |      Running on Bukkit - Leaves
+[15:49:06] [Server thread/INFO]: 
+[15:49:06] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[15:49:07] [Server thread/INFO]: [LuckPerms] Loading storage provider... [YAML]
+[15:49:07] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[15:49:07] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[15:49:07] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1787ms)
+[15:49:07] [Server thread/INFO]: [BetterServer] Enabling BetterServer v1.0
+[15:49:07] [Server thread/INFO]: Preparing level "world"
+[15:49:08] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:49:09] [Server thread/INFO]: Time elapsed: 365 ms
+[15:49:09] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[15:49:09] [Server thread/INFO]: Time elapsed: 76 ms
+[15:49:09] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[15:49:09] [Server thread/INFO]: Time elapsed: 60 ms
+[15:49:09] [Server thread/INFO]: Running delayed init tasks
+[15:49:09] [Server thread/INFO]: Done (5.583s)! For help, type "help"
+[15:49:14] [User Authenticator #0/INFO]: UUID of player Cai2er is e29e3c4e-a155-456e-9f59-8cde61dd1862
+[15:49:14] [Server thread/INFO]: Cai2er joined the game
+[15:49:14] [Server thread/INFO]: Cai2er[/127.0.0.1:63616] logged in with entity id 357 at ([world]-49.01470728229798, 63.0, 92.98880117015777)
+[15:49:22] [Server thread/INFO]: Cai2er issued server command: /home 1
+[15:49:22] [Server thread/WARN]: Cai2er moved too quickly! 204.32672527747366,0.0,-76.77991128065318
+[15:49:42] [Server thread/INFO]: Cai2er lost connection: Disconnected
+[15:49:42] [Server thread/INFO]: Cai2er left the game
+[15:49:47] [Server thread/INFO]: Stopping server
+[15:49:47] [Server thread/INFO]: [BetterServer] Disabling BetterServer v1.0
+[15:49:47] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
+[15:49:47] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[15:49:47] [Server thread/INFO]: [LuckPerms] Closing storage...
+[15:49:47] [Server thread/INFO]: [LuckPerms] Goodbye!
+[15:49:47] [Server thread/INFO]: Saving players
+[15:49:47] [Server thread/INFO]: Saving worlds
+[15:49:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:49:47] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[15:49:47] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[15:49:47] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[15:49:51] [Server thread/INFO]: [ChunkHolderManager] Saved 1232 block chunks, 1136 entity chunks, 0 poi chunks in world 'world' in 3.60s
+[15:49:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:49:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[15:49:51] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[15:49:51] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[15:49:51] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[15:49:52] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 1.21s
+[15:49:52] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:49:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[15:49:52] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[15:49:52] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[15:49:52] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[15:49:53] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.29s
+[15:49:53] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:49:53] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[15:49:53] [Server thread/INFO]: Flushing Chunk IO
+[15:49:53] [Server thread/INFO]: Closing Thread Pool
+[15:49:53] [Server thread/INFO]: Closing Server
