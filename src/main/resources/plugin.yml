@@ -30,7 +30,14 @@ commands:
   sethome:
     description: "设置家"
     permission-message: "§c你没权限哦~"
+  grab:
+    description: "抓取~"
+    permission-message: "§c你没权限哦~"
+    permission: betterserver.command.grab
 permissions:
+  betterserver.command.grab:
+    description: "Permission Node"
+    default: op
   betterserver.command.whereis:
     description: "Permission Node"
     default: op

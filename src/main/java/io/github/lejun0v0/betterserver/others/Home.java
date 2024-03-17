@@ -1,4 +1,4 @@
-package io.github.lejun0v0.betterserver.functions;
+package io.github.lejun0v0.betterserver.others;
 
 import org.bukkit.World;
 

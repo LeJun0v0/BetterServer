@@ -1,7 +1,7 @@
 package io.github.lejun0v0.betterserver.commands;
 
 import io.github.lejun0v0.betterserver.configs.HomeConfig;
-import io.github.lejun0v0.betterserver.functions.Home;
+import io.github.lejun0v0.betterserver.others.Home;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
@@ -42,7 +42,7 @@ public class HomeCommand implements CommandExecutor, TabCompleter {
             return true;
         }
         player.teleport(new Location(home.getWorld(), home.getX(), home.getY(), home.getZ()));
-        player.sendMessage(ChatColor.GREEN + "已传送至家 '" + homeName + "'");
+        player.sendMessage(ChatColor.GREEN + "已传送到家 '" + homeName + "'");
         return true;
     }
 

@@ -2,7 +2,7 @@ package io.github.lejun0v0.betterserver.commands;
 
 import io.github.lejun0v0.betterserver.BetterServer;
 import io.github.lejun0v0.betterserver.configs.HomeConfig;
-import io.github.lejun0v0.betterserver.functions.WelcomeMessage;
+import io.github.lejun0v0.betterserver.others.WelcomeMessage;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

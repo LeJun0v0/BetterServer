@@ -1,7 +1,7 @@
 package io.github.lejun0v0.betterserver.configs;
 
 import io.github.lejun0v0.betterserver.BetterServer;
-import io.github.lejun0v0.betterserver.functions.Home;
+import io.github.lejun0v0.betterserver.others.Home;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 
