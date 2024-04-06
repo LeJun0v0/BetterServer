@@ -2,14 +2,8 @@ package io.github.lejun0v0.betterserver;
 
 import io.github.lejun0v0.betterserver.commands.*;
 import io.github.lejun0v0.betterserver.configs.HomeConfig;
-import io.github.lejun0v0.betterserver.listeners.PlayerInteractAtEntityListener;
-import io.github.lejun0v0.betterserver.listeners.PlayerJoinListener;
-import io.github.lejun0v0.betterserver.listeners.PlayerQuitListener;
-import io.github.lejun0v0.betterserver.listeners.PlayerToggleSneakListener;
-import org.bukkit.entity.Player;
+import io.github.lejun0v0.betterserver.listeners.*;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.scheduler.BukkitRunnable;
-import org.bukkit.scheduler.BukkitTask;
 
 public final class BetterServer extends JavaPlugin {
 
@@ -27,20 +21,21 @@ public final class BetterServer extends JavaPlugin {
         getCommand("sethome").setExecutor(new SetHomeCommand());
         getCommand("betterserver").setExecutor(new BetterServerCommand());
         getCommand("grab").setExecutor(new GrabCommand());
+        getCommand("nstick").setExecutor(new NormalStickCommand());
         //Register events
         getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerQuitListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerInteractAtEntityListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerToggleSneakListener(), this);
-
-        BukkitTask task = new BukkitRunnable() {
+        getServer().getPluginManager().registerEvents(new PlayerInteractListener(), this);
+        /*BukkitTask task = new BukkitRunnable() {
             @Override
             public void run() {
                 for (Player player : getServer().getOnlinePlayers()) {
 
                 }
             }
-        }.runTaskTimer(BetterServer.getInstance(), 0, 1);
+        }.runTaskTimer(BetterServer.getInstance(), 0, 1);*/
     }
 
     @Override

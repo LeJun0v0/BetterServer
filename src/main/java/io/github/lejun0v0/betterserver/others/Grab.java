@@ -11,8 +11,8 @@ import java.util.UUID;
 
 public class Grab {
     private final static Grab instance = new Grab();
-    private HashMap<UUID, Boolean> toggledGrabbing = new HashMap<>();
-    private HashMap<UUID, Entity> grabbing = new HashMap<>();
+    private HashMap<UUID, Boolean> toggledGrabbing = new HashMap<>();//player toggle grabbing?
+    private HashMap<UUID, Entity> grabbing = new HashMap<>();//player -> staff grabbed
     private GrabTask task = new GrabTask();
     private boolean taskRunning = false;
     private HashMap<UUID, Double[]> grabbingMode = new HashMap<>();
@@ -65,9 +65,14 @@ public class Grab {
             double z = player.getZ();
             float yaw = player.getYaw();
             float pitch = player.getPitch();
-            x -= modeValue * Math.sin(Math.PI * (yaw / 180));
-            y -= modeValue * Math.sin(Math.PI * (pitch / 180));
-            z += modeValue * Math.cos(Math.PI * (yaw / 180));
+            /*
+            * Problems to solve:
+            1.The Location that entity is located to is not precise.
+            2.Player grabbed can't change visual angle(yaw,pitch)
+            * */
+            x -= modeValue * Math.sin(Math.toRadians(player.getYaw()));
+            y -= modeValue * Math.sin(Math.toRadians(player.getPitch()));
+            z += modeValue * Math.cos(Math.toRadians(player.getYaw()));
             entityGrabbed.teleport(new Location(player.getWorld(), x, y, z, entityGrabbed.getYaw(), entityGrabbed.getPitch()));
         }
     }
@@ -105,5 +110,9 @@ public class Grab {
 
     public static Grab getInstance() {
         return instance;
+    }
+
+    public HashMap<UUID, Entity> getGrabbing() {
+        return grabbing;
     }
 }

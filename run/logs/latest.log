@@ -1,111 +1,87 @@
-[13:49:26] [ServerMain/WARN]: [oshi.driver.windows.perfmon.PerfmonDisabled] Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
-[13:49:32] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[13:49:34] [ServerMain/INFO]: Loaded 7 recipes
-[13:49:35] [Server thread/INFO]: Starting minecraft server version 1.20.1
-[13:49:35] [Server thread/INFO]: Loading properties
-[13:49:35] [Server thread/INFO]: This server is running Leaves version git-Leaves-"847357b" (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 847357b)
-[13:49:36] [Server thread/INFO]: Using 4 threads for Netty based IO
-[13:49:36] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[13:49:37] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
-[13:49:37] [Server thread/INFO]: Default game type: SURVIVAL
-[13:49:37] [Server thread/INFO]: Generating keypair
-[13:49:37] [Server thread/INFO]: Starting Minecraft server on *:25565
-[13:49:37] [Server thread/INFO]: Using default channel type
-[13:49:37] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[13:49:37] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[13:49:38] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
-[13:49:38] [Server thread/INFO]: [BetterServer] Loading server plugin BetterServer v1.0
-[13:49:38] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[13:49:38] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
-[13:49:40] [Server thread/INFO]:         __    
-[13:49:40] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
-[13:49:40] [Server thread/INFO]:   |___ |      Running on Bukkit - Leaves
-[13:49:40] [Server thread/INFO]: 
-[13:49:40] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[13:49:40] [Server thread/INFO]: [LuckPerms] Loading storage provider... [YAML]
-[13:49:40] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[13:49:41] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[13:49:41] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2458ms)
-[13:49:41] [Server thread/INFO]: [BetterServer] Enabling BetterServer v1.0
-[13:49:41] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[13:49:41] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[13:49:41] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[13:49:41] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[13:49:41] [Server thread/INFO]: Preparing level "world"
-[13:49:42] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[13:49:43] [Server thread/INFO]: Time elapsed: 572 ms
-[13:49:43] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[13:49:43] [Server thread/INFO]: Time elapsed: 105 ms
-[13:49:43] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[13:49:43] [Server thread/INFO]: Time elapsed: 124 ms
-[13:49:43] [Server thread/INFO]: Running delayed init tasks
-[13:49:43] [Server thread/INFO]: Done (7.819s)! For help, type "help"
-[13:50:14] [User Authenticator #0/INFO]: UUID of player Cai2er is e82bcd82-e9d6-3a40-9daf-fbe7f2d4c345
-[13:50:14] [Server thread/INFO]: Cai2er joined the game
-[13:50:14] [Server thread/INFO]: Cai2er[/127.0.0.1:58635] logged in with entity id 221 at ([world]647.2180297307316, 113.0, 806.2257268844511)
-[13:50:20] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5642ms or 112 ticks behind
-[13:50:37] [Server thread/WARN]: Cai2er moved too quickly! 8.674360022704263,-12.000000476837158,5.60078293335107
-[13:50:39] [Server thread/WARN]: Cai2er moved too quickly! 0.41715461177136604,-12.937500519891941,-14.264229715217311
-[13:51:08] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 17281ms or 345 ticks behind
-[13:51:11] [Server thread/INFO]: Cai2er issued server command: /setblock ~ ~ ~ stone
-[13:51:11] [Server thread/INFO]: [Cai2er: Changed the block at 697, 79, 886]
-[13:51:29] [Server thread/INFO]: Cai2er issued server command: /summon cow ~ ~ ~ {NoAI:1b}
-[13:51:29] [Server thread/INFO]: [Cai2er: Summoned new Cow]
-[13:51:37] [Server thread/INFO]: Cai2er issued server command: /grab GrabTask on
-[13:51:41] [Server thread/INFO]: Cai2er issued server command: /grab
-[13:52:09] [Server thread/INFO]: Cai2er issued server command: /summon cow ~ ~ ~
-[13:52:09] [Server thread/INFO]: [Cai2er: Summoned new Cow]
-[13:52:22] [Server thread/INFO]: Cai2er issued server command: /grab position forward
-[13:52:29] [Server thread/INFO]: Cai2er issued server command: /grab position forward 10
-[13:52:47] [Server thread/INFO]: Cai2er issued server command: /summon minecraft:villager
-[13:52:47] [Server thread/INFO]: [Cai2er: Summoned new Villager]
-[13:52:58] [Server thread/INFO]: Cai2er issued server command: /grab position forward 100
-[13:53:09] [Server thread/INFO]: Cai2er issued server command: /grab position forward 10
-[13:53:13] [Server thread/INFO]: Cai2er issued server command: /grab position forward 30
-[13:53:20] [Server thread/INFO]: Cai2er issued server command: /grab position forward 3
-[13:55:27] [Server thread/INFO]: Cai2er issued server command: /grab status
-[13:55:42] [Server thread/INFO]: Cai2er issued server command: /grab status
-[13:55:54] [User Authenticator #1/INFO]: UUID of player Cai3er is 1d479e15-9f5e-337f-b865-b35dbf2d0de9
-[13:55:54] [Server thread/INFO]: Cai3er joined the game
-[13:55:54] [Server thread/INFO]: Cai3er[/127.0.0.1:64938] logged in with entity id 1572 at ([world]126.0753077270468, 75.92159999847412, 137.85913775172784)
-[13:56:00] [Server thread/INFO]: Cai2er issued server command: /time set day
-[13:56:00] [Server thread/INFO]: [Cai2er: Set the time to 1000]
-[13:56:12] [Server thread/INFO]: Cai2er issued server command: /tp Cai3er @s
-[13:56:12] [Server thread/INFO]: [Cai2er: Teleported Cai3er to Cai2er]
-[13:56:53] [Server thread/INFO]: Cai2er issued server command: /grab position forward 10
-[13:57:00] [Server thread/INFO]: Cai2er issued server command: /grab position forward 1
-[13:57:05] [Server thread/INFO]: Cai2er issued server command: /grab position default
-[13:57:17] [Server thread/INFO]: Cai3er lost connection: Disconnected
-[13:57:17] [Server thread/INFO]: Cai3er left the game
-[13:57:57] [Server thread/INFO]: Stopping server
-[13:57:57] [Server thread/INFO]: [BetterServer] Disabling BetterServer v1.0
-[13:57:57] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
-[13:57:57] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[13:57:57] [Server thread/INFO]: [LuckPerms] Closing storage...
-[13:57:57] [Server thread/INFO]: [LuckPerms] Goodbye!
-[13:57:57] [Server thread/INFO]: Saving players
-[13:57:57] [Server thread/INFO]: Cai2er lost connection: Server closed
-[13:57:57] [Server thread/INFO]: Cai2er left the game
-[13:57:57] [Server thread/INFO]: Saving worlds
-[13:57:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[13:57:57] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[13:57:57] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[13:57:57] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[13:57:58] [Server thread/INFO]: [ChunkHolderManager] Saved 1153 block chunks, 695 entity chunks, 0 poi chunks in world 'world' in 1.57s
-[13:57:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[13:57:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[13:57:59] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[13:57:59] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[13:57:59] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[13:57:59] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 62 entity chunks, 0 poi chunks in world 'world_nether' in 0.02s
-[13:57:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[13:57:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[13:57:59] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[13:57:59] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[13:57:59] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[13:57:59] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 51 entity chunks, 0 poi chunks in world 'world_the_end' in 0.02s
-[13:57:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[13:57:59] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[13:57:59] [Server thread/INFO]: Flushing Chunk IO
-[13:57:59] [Server thread/INFO]: Closing Thread Pool
-[13:57:59] [Server thread/INFO]: Closing Server
+[13:39:18] [ServerMain/WARN]: [oshi.driver.windows.perfmon.PerfmonDisabled] Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[13:39:25] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[13:39:28] [ServerMain/INFO]: Loaded 7 recipes
+[13:39:28] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[13:39:28] [Server thread/INFO]: Loading properties
+[13:39:28] [Server thread/INFO]: This server is running Leaves version git-Leaves-"847357b" (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 847357b)
+[13:39:29] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:39:29] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:39:29] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[13:39:30] [Server thread/INFO]: Default game type: SURVIVAL
+[13:39:30] [Server thread/INFO]: Generating keypair
+[13:39:30] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:39:30] [Server thread/INFO]: Using default channel type
+[13:39:30] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[13:39:30] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[13:39:30] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
+[13:39:31] [Server thread/INFO]: [BetterServer] Loading server plugin BetterServer v1.0
+[13:39:31] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:39:31] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
+[13:39:31] [Server thread/INFO]:         __    
+[13:39:31] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
+[13:39:31] [Server thread/INFO]:   |___ |      Running on Bukkit - Leaves
+[13:39:31] [Server thread/INFO]: 
+[13:39:31] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[13:39:32] [Server thread/INFO]: [LuckPerms] Loading storage provider... [YAML]
+[13:39:32] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[13:39:32] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[13:39:32] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1632ms)
+[13:39:32] [Server thread/INFO]: [BetterServer] Enabling BetterServer v1.0
+[13:39:32] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[13:39:32] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[13:39:32] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[13:39:32] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[13:39:32] [Server thread/INFO]: Preparing level "world"
+[13:39:33] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[13:39:34] [Server thread/INFO]: Time elapsed: 293 ms
+[13:39:34] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[13:39:34] [Server thread/INFO]: Time elapsed: 96 ms
+[13:39:34] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[13:39:34] [Server thread/INFO]: Time elapsed: 34 ms
+[13:39:34] [Server thread/INFO]: Running delayed init tasks
+[13:39:34] [Server thread/INFO]: Done (5.513s)! For help, type "help"
+[13:42:36] [User Authenticator #0/INFO]: UUID of player Cai2er is e82bcd82-e9d6-3a40-9daf-fbe7f2d4c345
+[13:42:36] [Server thread/INFO]: Cai2er joined the game
+[13:42:36] [Server thread/INFO]: Cai2er[/127.0.0.1:53797] logged in with entity id 222 at ([world]462.0545296089112, 67.4880741835653, 222.15654263687395)
+[13:42:47] [Server thread/INFO]: Cai2er issued server command: /nstick
+[13:42:49] [Server thread/INFO]: Cai2er issued server command: /nstick get
+[13:43:07] [Server thread/INFO]: Cai2er lost connection: Disconnected
+[13:43:07] [Server thread/INFO]: Cai2er left the game
+[13:43:08] [User Authenticator #0/INFO]: UUID of player Cai2er is e82bcd82-e9d6-3a40-9daf-fbe7f2d4c345
+[13:43:08] [Server thread/INFO]: Cai2er joined the game
+[13:43:08] [Server thread/INFO]: Cai2er[/127.0.0.1:53813] logged in with entity id 642 at ([world]484.18703087776686, 74.2324063232743, 241.01825835272024)
+[13:43:15] [Server thread/INFO]: Cai2er issued server command: /nstick lightning
+[13:45:06] [Server thread/INFO]: Cai2er issued server command: /nstick lightning
+[13:45:09] [Server thread/INFO]: Cai2er issued server command: /nstick get
+[13:45:16] [Server thread/INFO]: Cai2er lost connection: Disconnected
+[13:45:16] [Server thread/INFO]: Cai2er left the game
+[13:45:21] [Server thread/INFO]: Stopping server
+[13:45:21] [Server thread/INFO]: [BetterServer] Disabling BetterServer v1.0
+[13:45:21] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
+[13:45:21] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[13:45:22] [Server thread/INFO]: [LuckPerms] Closing storage...
+[13:45:22] [Server thread/INFO]: [LuckPerms] Goodbye!
+[13:45:22] [Server thread/INFO]: Saving players
+[13:45:22] [Server thread/INFO]: Saving worlds
+[13:45:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Saved 249 block chunks, 297 entity chunks, 0 poi chunks in world 'world' in 0.54s
+[13:45:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[13:45:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 61 entity chunks, 0 poi chunks in world 'world_nether' in 0.02s
+[13:45:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:45:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[13:45:22] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 51 entity chunks, 0 poi chunks in world 'world_the_end' in 0.05s
+[13:45:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:45:22] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[13:45:22] [Server thread/INFO]: Flushing Chunk IO
+[13:45:22] [Server thread/INFO]: Closing Thread Pool
+[13:45:22] [Server thread/INFO]: Closing Server

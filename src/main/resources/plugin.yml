@@ -26,15 +26,22 @@ commands:
     permission-message: "§c你没权限哦~"
   home:
     description: "回家"
-    permission-message: "§c你没权限哦~"
   sethome:
     description: "设置家"
-    permission-message: "§c你没权限哦~"
   grab:
     description: "抓取~"
     permission-message: "§c你没权限哦~"
     permission: betterserver.command.grab
+  throw:
+    description: "我丢！"
+  nstick:
+    description: "自定义物品~"
+    permission: betterserver.command.nstick
+    permission-message: "§c你没权限哦~"
 permissions:
+  betterserver.command.nstick:
+    description: "Permission Node"
+    default: op
   betterserver.command.grab:
     description: "Permission Node"
     default: op

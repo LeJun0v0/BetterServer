@@ -1,6 +1,7 @@
 package io.github.lejun0v0.betterserver.listeners;
 
 import io.github.lejun0v0.betterserver.others.Grab;
+import io.github.lejun0v0.betterserver.others.NormalStick;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -11,5 +12,6 @@ public class PlayerQuitListener implements Listener {
     public void onQuit(PlayerQuitEvent event) {
         final Player player = event.getPlayer();
         Grab.getInstance().removePlayer(player);
+        NormalStick.removePlayer(player);
     }
 }
