@@ -8,6 +8,8 @@ description: A self-use plugin
 website: lejun0v0.github.io
 
 commands:
+  vote:
+    description: "投票"
   suicide:
     description: "自杀，可想清楚了嗷~"
     aliases:

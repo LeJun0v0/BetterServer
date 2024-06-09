@@ -13,5 +13,6 @@ public class PlayerQuitListener implements Listener {
         final Player player = event.getPlayer();
         Grab.getInstance().removePlayer(player);
         NormalStick.removePlayer(player);
+        
     }
 }
