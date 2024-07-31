@@ -12,7 +12,7 @@ import java.util.UUID;
 public class Grab {
     private final static Grab instance = new Grab();
     private HashMap<UUID, Boolean> toggledGrabbing = new HashMap<>();//player toggle grabbing?
-    private HashMap<UUID, Entity> grabbing = new HashMap<>();//player -> staff grabbed
+    private HashMap<UUID, Entity> grabbing = new HashMap<>();//player -> stuff grabbed
     private GrabTask task = new GrabTask();
     private boolean taskRunning = false;
     private HashMap<UUID, Double[]> grabbingMode = new HashMap<>();

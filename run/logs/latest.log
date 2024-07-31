@@ -1,119 +1,82 @@
-[10:11:34] [ServerMain/WARN]: [oshi.driver.windows.perfmon.PerfmonDisabled] Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
-[10:11:41] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[10:11:43] [ServerMain/INFO]: Loaded 7 recipes
-[10:11:44] [Server thread/INFO]: Starting minecraft server version 1.20.1
-[10:11:44] [Server thread/INFO]: Loading properties
-[10:11:44] [Server thread/INFO]: This server is running Leaves version git-Leaves-"847357b" (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 847357b)
-[10:11:45] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[10:11:45] [Server thread/INFO]: Using 4 threads for Netty based IO
-[10:11:45] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
-[10:11:45] [Server thread/INFO]: Default game type: SURVIVAL
-[10:11:45] [Server thread/INFO]: Generating keypair
-[10:11:45] [Server thread/INFO]: Starting Minecraft server on *:25565
-[10:11:45] [Server thread/INFO]: Using default channel type
-[10:11:45] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[10:11:45] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[10:11:46] [Server thread/INFO]: [SecureCommand] Loading server plugin SecureCommand v1.0
-[10:11:46] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
-[10:11:46] [Server thread/INFO]: [BetterServer] Loading server plugin BetterServer v1.0
-[10:11:46] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[10:11:46] [Server thread/INFO]: [SecureCommand] Enabling SecureCommand v1.0
-[10:11:46] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
-[10:11:46] [Server thread/INFO]:         __    
-[10:11:46] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
-[10:11:46] [Server thread/INFO]:   |___ |      Running on Bukkit - Leaves
-[10:11:46] [Server thread/INFO]: 
-[10:11:46] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[10:11:47] [Server thread/INFO]: [LuckPerms] Loading storage provider... [YAML]
-[10:11:47] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[10:11:47] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[10:11:47] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1296ms)
-[10:11:47] [Server thread/INFO]: [BetterServer] Enabling BetterServer v1.0
-[10:11:47] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[10:11:47] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[10:11:47] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[10:11:47] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[10:11:47] [Server thread/INFO]: Preparing level "world"
-[10:11:48] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[10:11:48] [Server thread/INFO]: Time elapsed: 362 ms
-[10:11:48] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[10:11:48] [Server thread/INFO]: Time elapsed: 37 ms
-[10:11:48] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[10:11:48] [Server thread/INFO]: Time elapsed: 28 ms
-[10:11:48] [Server thread/INFO]: Running delayed init tasks
-[10:11:48] [Server thread/INFO]: Done (4.300s)! For help, type "help"
-[10:12:17] [User Authenticator #0/INFO]: UUID of player Cai2er is e82bcd82-e9d6-3a40-9daf-fbe7f2d4c345
-[10:12:17] [Server thread/INFO]: Cai2er joined the game
-[10:12:17] [Server thread/INFO]: Cai2er[/127.0.0.1:56946] logged in with entity id 294 at ([world]139.45611479198615, 100.99341455718178, 211.1443094090635)
-[10:12:26] [Server thread/INFO]: Cai2er issued server command: /vote create 12 1s
-[10:13:05] [Server thread/INFO]: Cai2er issued server command: /nstick lightning
-[10:13:34] [Server thread/WARN]: Cai2er moved too quickly! -16.497756332698614,-1.8270176477320064,5.8326130018712945
-[10:13:56] [Server thread/INFO]: Cai2er issued server command: /nstick get
-[10:14:04] [Server thread/INFO]: Cai2er issued server command: /nstick get
-[10:14:48] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6042ms or 120 ticks behind
-[10:14:48] [Server thread/WARN]: Cai2er moved too quickly! 8.632150944620918,0.0,5.469222719480143
-[10:14:59] [Server thread/ERROR]: Could not pass event PlayerInteractEvent to BetterServer v1.0
-java.lang.NullPointerException: Cannot invoke "org.bukkit.inventory.meta.ItemMeta.getPersistentDataContainer()" because the return value of "org.bukkit.inventory.ItemStack.getItemMeta()" is null
-	at io.github.lejun0v0.betterserver.listeners.PlayerInteractListener.onLeftClick(PlayerInteractListener.java:51) ~[BetterServer.jar:?]
-	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor21.execute(Unknown Source) ~[?:?]
-	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77) ~[leaves-api-1.20.1-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[leaves-api-1.20.1-R0.1-SNAPSHOT.jar:?]
-	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:53) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:126) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:615) ~[leaves-api-1.20.1-R0.1-SNAPSHOT.jar:?]
-	at org.bukkit.craftbukkit.v1_20_R1.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:591) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at org.bukkit.craftbukkit.v1_20_R1.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:548) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at org.bukkit.craftbukkit.v1_20_R1.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:542) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at org.bukkit.craftbukkit.v1_20_R1.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:538) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleAnimate(ServerGamePacketListenerImpl.java:2675) ~[?:?]
-	at net.minecraft.network.protocol.game.ServerboundSwingPacket.handle(ServerboundSwingPacket.java:25) ~[?:?]
-	at net.minecraft.network.protocol.game.ServerboundSwingPacket.a(ServerboundSwingPacket.java:11) ~[?:?]
-	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:50) ~[?:?]
-	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:153) ~[?:?]
-	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[?:?]
-	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1361) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at net.minecraft.server.MinecraftServer.d(MinecraftServer.java:187) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:126) ~[?:?]
-	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1338) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1331) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:136) ~[?:?]
-	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1309) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1183) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:309) ~[leaves-1.20.1.jar:git-Leaves-"847357b"]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-[10:15:18] [Server thread/INFO]: Cai2er issued server command: /stop
-[10:15:18] [Server thread/INFO]: [Cai2er: Stopping the server]
-[10:15:18] [Server thread/INFO]: Stopping server
-[10:15:18] [Server thread/INFO]: [BetterServer] Disabling BetterServer v1.0
-[10:15:18] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
-[10:15:18] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
-[10:15:18] [Server thread/INFO]: [LuckPerms] Closing storage...
-[10:15:18] [Server thread/INFO]: [LuckPerms] Goodbye!
-[10:15:18] [Server thread/INFO]: [SecureCommand] Disabling SecureCommand v1.0
-[10:15:18] [Server thread/INFO]: Saving players
-[10:15:18] [Server thread/INFO]: Cai2er lost connection: Server closed
-[10:15:18] [Server thread/INFO]: Cai2er left the game
-[10:15:18] [Server thread/INFO]: Saving worlds
-[10:15:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[10:15:18] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[10:15:18] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[10:15:18] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[10:15:21] [Server thread/INFO]: [ChunkHolderManager] Saved 2153 block chunks, 1508 entity chunks, 0 poi chunks in world 'world' in 3.21s
-[10:15:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[10:15:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[10:15:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[10:15:21] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[10:15:21] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[10:15:22] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 1.03s
-[10:15:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[10:15:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[10:15:22] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[10:15:22] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[10:15:22] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[10:15:23] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.43s
-[10:15:23] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[10:15:23] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[10:15:23] [Server thread/INFO]: Flushing Chunk IO
-[10:15:23] [Server thread/INFO]: Closing Thread Pool
-[10:15:23] [Server thread/INFO]: Closing Server
+[23:30:50] [ServerMain/WARN]: [oshi.driver.windows.perfmon.PerfmonDisabled] Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[23:30:57] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[23:31:00] [ServerMain/INFO]: Loaded 7 recipes
+[23:31:01] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[23:31:01] [Server thread/INFO]: Loading properties
+[23:31:01] [Server thread/INFO]: This server is running Leaves version git-Leaves-"847357b" (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: 847357b)
+[23:31:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[23:31:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[23:31:02] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
+[23:31:02] [Server thread/INFO]: Default game type: SURVIVAL
+[23:31:02] [Server thread/INFO]: Generating keypair
+[23:31:02] [Server thread/INFO]: Starting Minecraft server on *:25565
+[23:31:02] [Server thread/INFO]: Using default channel type
+[23:31:02] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[23:31:02] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[23:31:03] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.117
+[23:31:03] [Server thread/INFO]: [BetterServer] Loading server plugin BetterServer v1.0
+[23:31:03] [Server thread/INFO]: [AutoPluginLoader] Loading server plugin AutoPluginLoader v1.3.1
+[23:31:03] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[23:31:03] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.117
+[23:31:04] [Server thread/INFO]:         __    
+[23:31:04] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.117
+[23:31:04] [Server thread/INFO]:   |___ |      Running on Bukkit - Leaves
+[23:31:04] [Server thread/INFO]: 
+[23:31:04] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[23:31:04] [Server thread/INFO]: [LuckPerms] Loading storage provider... [YAML]
+[23:31:04] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[23:31:04] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[23:31:05] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1418ms)
+[23:31:05] [Server thread/INFO]: [BetterServer] Enabling BetterServer v1.0
+[23:31:05] [Server thread/WARN]: [BetterServer] Could not save zh_cn.yaml to plugins\BetterServer\lang\zh_cn.yaml because zh_cn.yaml already exists.
+[23:31:05] [Server thread/INFO]: Preparing level "world"
+[23:31:05] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[23:31:05] [Server thread/INFO]: Time elapsed: 262 ms
+[23:31:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[23:31:05] [Server thread/INFO]: Time elapsed: 75 ms
+[23:31:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[23:31:05] [Server thread/INFO]: Time elapsed: 54 ms
+[23:31:05] [Server thread/INFO]: [AutoPluginLoader] Enabling AutoPluginLoader v1.3.1
+[23:31:05] [Server thread/INFO]: [AutoPluginLoader] Plugin has successfully loaded. (Took 18ms)
+[23:31:06] [Server thread/INFO]: Running delayed init tasks
+[23:31:06] [Server thread/INFO]: Done (5.017s)! For help, type "help"
+[23:31:07] [User Authenticator #0/INFO]: UUID of player SinewyRoom68492 is 52001f77-e93a-4e01-9d03-1882971ad7c0
+[23:31:07] [Server thread/INFO]: SinewyRoom68492 joined the game
+[23:31:07] [Server thread/INFO]: SinewyRoom68492[/127.0.0.1:55577] logged in with entity id 20 at ([world]45.36401993659143, 13.987312686486112, 49.253838995369726)
+[23:31:21] [Server thread/INFO]: SinewyRoom68492 issued server command: /portal create blue NS
+[23:31:26] [Server thread/INFO]: SinewyRoom68492 issued server command: /portal create blue WE
+[23:31:41] [Server thread/INFO]: SinewyRoom68492 issued server command: /portal create orange WE
+[23:31:45] [Server thread/INFO]: SinewyRoom68492 issued server command: /portal create orange NS
+[23:31:54] [Server thread/INFO]: SinewyRoom68492 lost connection: Disconnected
+[23:31:54] [Server thread/INFO]: SinewyRoom68492 left the game
+[23:31:57] [Server thread/INFO]: Stopping server
+[23:31:57] [Server thread/INFO]: [AutoPluginLoader] Disabling AutoPluginLoader v1.3.1
+[23:31:57] [Server thread/INFO]: [BetterServer] Disabling BetterServer v1.0
+[23:31:57] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.117
+[23:31:57] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[23:31:57] [Server thread/INFO]: [LuckPerms] Closing storage...
+[23:31:57] [Server thread/INFO]: [LuckPerms] Goodbye!
+[23:31:57] [Server thread/INFO]: Saving players
+[23:31:57] [Server thread/INFO]: Saving worlds
+[23:31:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[23:31:57] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[23:31:57] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[23:31:57] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[23:31:58] [Server thread/INFO]: [ChunkHolderManager] Saved 717 block chunks, 717 entity chunks, 0 poi chunks in world 'world' in 0.67s
+[23:31:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:31:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[23:31:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[23:31:58] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[23:31:58] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[23:31:59] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0.97s
+[23:31:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:31:59] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[23:31:59] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[23:31:59] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[23:31:59] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[23:31:59] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.21s
+[23:31:59] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:31:59] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[23:31:59] [Server thread/INFO]: Flushing Chunk IO
+[23:31:59] [Server thread/INFO]: Closing Thread Pool
+[23:31:59] [Server thread/INFO]: Closing Server

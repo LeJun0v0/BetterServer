@@ -48,8 +48,10 @@ public class PlayerInteractListener implements Listener {
         final Player player = event.getPlayer();
         if (event.getAction().isLeftClick()) {
             ItemStack item = player.getInventory().getItemInMainHand();
-            if (item.getItemMeta().getPersistentDataContainer().has(Keys.NORMAL_STICK)) {
-                player.sendActionBar(ChatColor.GREEN + "LEFT CLICK!");
+            if (item.getItemMeta() != null) {
+                if (item.getItemMeta().getPersistentDataContainer().has(Keys.NORMAL_STICK)) {
+                    player.sendActionBar(ChatColor.GREEN + "LEFT CLICK!");
+                }
             }
         }
     }

@@ -4,6 +4,11 @@ import io.github.lejun0v0.betterserver.commands.*;
 import io.github.lejun0v0.betterserver.configs.HomeConfig;
 import io.github.lejun0v0.betterserver.listeners.*;
 import io.github.lejun0v0.betterserver.others.VoteEvent;
+import io.github.lejun0v0.betterserver.portal.BluePortalParticleTask;
+import io.github.lejun0v0.betterserver.portal.OrangePortalParticleTask;
+import io.github.lejun0v0.betterserver.portal.PortalCommand;
+import io.github.lejun0v0.betterserver.portal.PortalManager;
+import io.github.lejun0v0.betterserver.utils.MultiLang;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -14,12 +19,18 @@ import java.util.function.BiConsumer;
 
 public final class BetterServer extends JavaPlugin {
 
+    private BukkitTask voteTask;
+    private BukkitTask bluePortalParticleTask;
+    private BukkitTask orangePortalParticleTask;
+
     @Override
     public void onEnable() {
         //Plugin startup logic
         //Load configs
-        HomeConfig.getInstance().load();
         saveDefaultConfig();
+        HomeConfig.getInstance().load();
+        MultiLang.getInstance().init();
+
         //Register commands
         getCommand("suicide").setExecutor(new SuicideCommand());
         getCommand("whereis").setExecutor(new WhereisCommand());
@@ -30,13 +41,14 @@ public final class BetterServer extends JavaPlugin {
         getCommand("grab").setExecutor(new GrabCommand());
         getCommand("nstick").setExecutor(new NormalStickCommand());
         getCommand("vote").setExecutor(new VoteCommand());
+        getCommand("portal").setExecutor(new PortalCommand());
         //Register events
         getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerQuitListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerInteractAtEntityListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerToggleSneakListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerInteractListener(), this);
-        BukkitTask task = new BukkitRunnable() {
+        voteTask = new BukkitRunnable() {
             @Override
             public void run() {
                 long time = System.currentTimeMillis();
@@ -64,7 +76,10 @@ public final class BetterServer extends JavaPlugin {
                     }
                 });
             }
-        }.runTaskTimer(BetterServer.getInstance(), 0, 20);
+        }.runTaskTimer(this, 0, 20);
+        PortalManager portalManager = PortalManager.getInstance();
+        bluePortalParticleTask = new BluePortalParticleTask().runTaskTimer(this, 0, 1);
+        orangePortalParticleTask = new OrangePortalParticleTask().runTaskTimer(this, 0, 1);
     }
 
     @Override

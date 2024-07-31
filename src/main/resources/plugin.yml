@@ -40,6 +40,10 @@ commands:
     description: "自定义物品~"
     permission: betterserver.command.nstick
     permission-message: "§c你没权限哦~"
+  login:
+    description: "这条指令用于登录"
+  portal:
+    description: "The cake is a lie..."
 permissions:
   betterserver.command.nstick:
     description: "Permission Node"
