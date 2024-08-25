@@ -4,10 +4,7 @@ import io.github.lejun0v0.betterserver.commands.*;
 import io.github.lejun0v0.betterserver.configs.HomeConfig;
 import io.github.lejun0v0.betterserver.listeners.*;
 import io.github.lejun0v0.betterserver.others.VoteEvent;
-import io.github.lejun0v0.betterserver.portal.BluePortalParticleTask;
-import io.github.lejun0v0.betterserver.portal.OrangePortalParticleTask;
-import io.github.lejun0v0.betterserver.portal.PortalCommand;
-import io.github.lejun0v0.betterserver.portal.PortalManager;
+import io.github.lejun0v0.betterserver.portal.*;
 import io.github.lejun0v0.betterserver.utils.MultiLang;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -43,6 +40,7 @@ public final class BetterServer extends JavaPlugin {
         getCommand("vote").setExecutor(new VoteCommand());
         getCommand("portal").setExecutor(new PortalCommand());
         //Register events
+        getServer().getPluginManager().registerEvents(new PlayerMovementListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerQuitListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerInteractAtEntityListener(), this);
@@ -80,6 +78,7 @@ public final class BetterServer extends JavaPlugin {
         PortalManager portalManager = PortalManager.getInstance();
         bluePortalParticleTask = new BluePortalParticleTask().runTaskTimer(this, 0, 1);
         orangePortalParticleTask = new OrangePortalParticleTask().runTaskTimer(this, 0, 1);
+        new LineTestTask().runTaskTimer(this, 0, 10);//10 ticks(0.5s)
     }
 
     @Override

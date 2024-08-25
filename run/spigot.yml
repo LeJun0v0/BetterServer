@@ -171,6 +171,8 @@ world-settings:
       entity: 50
     max-tnt-per-tick: 100
     verbose: false
+  faweregentempworld:
+    verbose: false
 config-version: 12
 stats:
   disable-saving: false
